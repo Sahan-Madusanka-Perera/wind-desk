@@ -1,0 +1,11 @@
+# Keep CLI uploads lean: Vercel installs dependencies itself.
+**/node_modules
+**/.venv
+**/__pycache__
+**/.pytest_cache
+**/.mypy_cache
+**/.ruff_cache
+frontend/dist
+.impeccable
+.vercel
+*.pdf
