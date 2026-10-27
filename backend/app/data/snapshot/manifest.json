@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "source": "Elexon Insights Solution (BMRS) API",
+  "fetchedAt": "2026-10-26T13:31:08Z",
+  "datasets": {
+    "WINDFOR": {
+      "endpoint": "/datasets/WINDFOR/stream",
+      "file": "windfor.json.gz",
+      "publishDateTimeFrom": "2025-12-15T23:00:00Z",
+      "publishDateTimeTo": "2026-02-01T23:00:00Z",
+      "records": 28032,
+      "sha256": "6b954176dd6df4578c58bb63094efd68cb1849d7366c5b465f5d218d98dec842"
+    },
+    "FUELHH": {
+      "endpoint": "/datasets/FUELHH/stream",
+      "file": "fuelhh_wind.json.gz",
+      "fuelType": "WIND",
+      "settlementDateFrom": "2025-12-17",
+      "settlementDateTo": "2026-02-01",
+      "records": 2256,
+      "sha256": "a2ca817ce4399f702af23f9be91694bc0b39689b88d25d7db8ff2f74216efeb8"
+    }
+  }
+}
