@@ -1,0 +1,12 @@
+# Production-like local run: one container serving the API and the built frontend.
+#   docker compose up --build   ->   http://localhost:8000
+services:
+  winddesk:
+    build: .
+    image: winddesk:latest
+    ports:
+      - "8000:8000"
+    environment:
+      # "snapshot" serves the bundled January 2026 data; "live" fetches it from Elexon.
+      WINDDESK_DATA_SOURCE: ${WINDDESK_DATA_SOURCE:-snapshot}
+    restart: unless-stopped

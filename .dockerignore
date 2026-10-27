@@ -1,0 +1,16 @@
+**/node_modules
+**/.venv
+**/__pycache__
+**/.pytest_cache
+**/.mypy_cache
+**/.ruff_cache
+**/.coverage
+frontend/dist
+backend/tests
+.git
+.github
+.impeccable
+.vercel
+docs
+*.pdf
+*.md
