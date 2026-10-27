@@ -1,0 +1,35 @@
+[project]
+name = "winddesk-backend"
+version = "1.0.0"
+description = "Day-ahead wind forecast monitoring API for GB power procurement."
+requires-python = ">=3.11"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "W", "F", "I", "B", "UP", "SIM", "RUF", "N", "C4", "PT", "DTZ"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**" = ["DTZ001"]
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+plugins = ["pydantic.mypy"]
+files = ["app", "tests"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-ra --strict-markers"
+filterwarnings = ["error"]
+
+[tool.coverage.run]
+source = ["app"]
+omit = ["app/ingest.py"]
+
+[tool.coverage.report]
+show_missing = true
+skip_covered = true
