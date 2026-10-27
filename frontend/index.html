@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="theme-color" content="#0b0e11" />
+    <meta
+      name="description"
+      content="WindDesk: day-ahead wind forecast monitoring for GB power procurement. The forecast available at gate closure, a calibrated view with its uncertainty range, and a full accuracy report."
+    />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>WindDesk</title>
+  </head>
+  <body>
+    <!--
+      THESIS: The desk's morning decision as a trading-terminal blotter: one row per hourly product, the forecast that existed at gate closure, never a dashboard of equal cards.
+      OWN-WORLD: Near-black panes (#0b0e11/#11161b), hairline rules, JetBrains Mono data grid, terminal amber only for selection and focus, three validated inks (outturn blue, NESO orange, calibrated aqua with its wash).
+      STORY: The trader sees what they knew at gate closure, how much wind they can count on, how wrong this forecast usually is, then acts.
+      FIRST VIEWPORT: Command bar (delivery day, gate closure, outturn toggle), one-row 31-day rail, one-line quote strip (expected, firm at 90%, NESO, run used, outturn), then the forecast chart over the decision record on the left and the 24-row blotter on the right, linked by hover; forecast evolution below.
+      FORM: Trading Terminal Blotter (model pick chosen by the user; direction roll key ad981990).
+      FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and DESIGN.md
+    -->
+    <noscript>WindDesk needs JavaScript to display the forecast monitor.</noscript>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
